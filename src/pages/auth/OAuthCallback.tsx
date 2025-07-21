@@ -32,7 +32,7 @@ const OAuthCallback = () => {
       window.location.href = isAdmin ? "/admin" : "/dashboard";  // hard redirect to reload auth state
     } else {
       console.error("OAuth failed. Missing params.");
-      navigate("/login");
+      navigate("/");
     }
   }, []);
 
